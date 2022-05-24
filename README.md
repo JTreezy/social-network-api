@@ -1,50 +1,16 @@
 # Social Network API
 
-## User Story
+## Description
 
-```md
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
-```
+This API allows for creation of new users with a valid username and email address, add other users as friends as well as post "thoughts" and "reactions". Not only can one post such thoughts and reactions, users can also update and delete thoughts and reactions as well as remove other users as friends. You can get started by creating a username and using an email address.
 
-## Acceptance Criteria
+## Installation
 
-```md
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
-```
+To use this project, you can either clone or fork this repository to your local machine. Afterwards, be sure to install Node.Js as well as MongoDB. This project comes with a package.json file, so be sure to run `npm install` to install dependencies.
 
-## Mock Up
+## Usage
 
-The following animations show examples of the application's API routes being tested in Insomnia.
-
-The following animation shows GET routes to return all users and all thoughts being tested in Insomnia:
-
-![Demo of GET routes to return all users and all thoughts being tested in Insomnia.](./Assets/18-nosql-homework-demo-01.gif)
-
-The following animation shows GET routes to return a single user and a single thought being tested in Insomnia:
-
-![Demo that shows GET routes to return a single user and a single thought being tested in Insomnia.](./Assets/18-nosql-homework-demo-02.gif)
-
-The following animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
-
-![Demo that shows the POST, PUT, and DELETE routes for users being tested in Insomnia.](./Assets/18-nosql-homework-demo-03.gif)
-
-In addition to this, your walkthrough video should show the POST, PUT, and DELETE routes for thoughts being tested in Insomnia.
-
-The following animation shows the POST and DELETE routes for a user’s friend list being tested in Insomnia:
-
-![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./Assets/18-nosql-homework-demo-04.gif)
-
-In addition to this, your walkthrough video should show the POST and DELETE routes for reactions to thoughts being tested in Insomnia.
+After cloning/forking this repo to your local machine and completing the installation steps, open the "server.js" file in the terminal and run the command "npm run start". For this project, Insomnia is recommended to view the routes given. 
 
 ### Models
 
@@ -123,3 +89,21 @@ Create a virtual called `reactionCount` that retrieves the length of the thought
 
 This will not be a model, but rather will be used as the `reaction` field's subdocument schema in the `Thought` model.
 
+## License <a name="license"></a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Tests <a name="tests"></a>
+Please update tests when appropriate and necessary.
+
+## Questions <a name="questions"></a>
+If there are any questions or concerns about the application, here is a link to my GitHub profile:
+
+-JTreezy([github.com/JTreezy](github.com/JTreezy))
+
+If there are any additional questions, here is my e-mail address to reach me.
+
+-digitalsigna@gmail.com
+
+# Submission
+* GitHub: https://github.com/JTreezy/social-network-api
+* Walkthrough Video: https://drive.google.com/file/d/1pp8xaCDf97YHXKGtFU-2HDR4kqSPpBwL/view
